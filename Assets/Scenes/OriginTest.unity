@@ -175,11 +175,60 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6605876361929284039, guid: f8fd40e9c521ee94c927920f94a9f75d, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f8fd40e9c521ee94c927920f94a9f75d, type: 3}
+--- !u!1 &911313860
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 911313862}
+  - component: {fileID: 911313861}
+  m_Layer: 0
+  m_Name: GameManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &911313861
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 911313860}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 51beae97e7318b0478da326aa61cae27, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objects:
+  - {fileID: 911313860}
+  - {fileID: 1341150751}
+  - {fileID: 965219349}
+--- !u!4 &911313862
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 911313860}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 4.606977, y: 0.48937386, z: 0.052556384}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &965219349
 GameObject:
   m_ObjectHideFlags: 0
@@ -272,6 +321,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1341150751 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7109469670754653630, guid: f8fd40e9c521ee94c927920f94a9f75d, type: 3}
+  m_PrefabInstance: {fileID: 168094380}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1439177813
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -344,3 +398,4 @@ SceneRoots:
   - {fileID: 965219352}
   - {fileID: 168094380}
   - {fileID: 1439177813}
+  - {fileID: 911313862}

@@ -6,7 +6,6 @@ using UnityEngine.SceneManagement;
 public class LevelMoveRef : MonoBehaviour
 {
     public int sceneBuildIndex;
-
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("Player"))

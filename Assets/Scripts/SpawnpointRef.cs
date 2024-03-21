@@ -4,16 +4,17 @@ using UnityEngine;
 
 public class SpawnpointRef : MonoBehaviour
 {
-    public Transform spawnPoint;
     public int spawnPointRef;
-    public void Spawn()
+    public PlayerController getIndex;
+    public int sceneIndex;
+
+    private void Awake()
     {
-        transform.position = spawnPoint.position;
+        getIndex = GameObject.FindWithTag("Player").GetComponent<PlayerController>();
+        sceneIndex = getIndex.previousSceneIndex;
+        if (sceneIndex == spawnPointRef)
+        {
+            GameObject.FindWithTag("Player").transform.position = transform.position;
+        }
     }
-
-    /*public void returnRef()
-    {
-        
-    }*/
-
 }
