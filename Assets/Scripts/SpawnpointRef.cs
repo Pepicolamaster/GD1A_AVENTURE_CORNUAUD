@@ -6,13 +6,13 @@ public class SpawnpointRef : MonoBehaviour
 {
     public int spawnPointRef;
     public PlayerController getIndex;
-    public int sceneIndex;
+    public int PreviousSceneIndex;
 
     private void Awake()
     {
         getIndex = GameObject.FindWithTag("Player").GetComponent<PlayerController>();
-        sceneIndex = getIndex.previousSceneIndex;
-        if (sceneIndex == spawnPointRef)
+        PreviousSceneIndex = getIndex.previousSceneIndex;
+        if (PreviousSceneIndex == spawnPointRef)
         {
             GameObject.FindWithTag("Player").transform.position = transform.position;
         }

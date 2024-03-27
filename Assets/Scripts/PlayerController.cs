@@ -9,7 +9,9 @@ public class PlayerController : MonoBehaviour
     private float horizontalInput;
     private float verticalInput;
     public float speed;
+    
     public int coinCount = 0;
+    public bool hasKey = false;
 
     public int previousSceneIndex;
     //références
@@ -26,6 +28,16 @@ public class PlayerController : MonoBehaviour
     public void AddCoin()
     {
         coinCount += 1;
+    }
+
+    public void GetKey()
+    {
+        hasKey = true;
+    }
+
+    public void UseKey()
+    {
+        hasKey = false;
     }
 
     public void OnTriggerEnter2D(Collider2D collision)

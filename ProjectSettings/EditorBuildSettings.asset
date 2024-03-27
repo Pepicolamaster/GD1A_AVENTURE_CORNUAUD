@@ -6,12 +6,15 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/OriginTest.unity
+    path: Assets/Scenes/0 Origin.unity
     guid: 159d6dde77add3b408bf762ede4e176e
   - enabled: 1
-    path: Assets/Scenes/OutsideTest.unity
+    path: Assets/Scenes/1 Outside.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
-    path: Assets/Scenes/InsideTest.unity
+    path: Assets/Scenes/2 Inside.unity
     guid: 75cc866fd2cbe524397894beecf3ee85
+  - enabled: 1
+    path: Assets/Scenes/3 Beach.unity
+    guid: dddb1f5c259e0c84085f9395791a915c
   m_configObjects: {}
